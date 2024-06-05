@@ -1,0 +1,137 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: ./src
+        id: check_src
+        run: |
+          if [ -d "./src" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./src does not exist"
+            exit 1
+          fi
+
+      - name: ./PKG
+        id: check_pkg
+        run: |
+          if [ -d "./PKG" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./PKG does not exist"
+            exit 1
+          fi
+
+      - name: ./src/QLArk.js
+        id: check_src_qlark
+        run: |
+          if [ -f "./src/QLArk.js" ]; then
+            echo "Exists!"
+          else
+            echo "File ./src/QLArk.js does not exist"
+            exit 1
+          fi
+
+      - name: ./PKG/win
+        id: check_pkg_win
+        run: |
+          if [ -d "./PKG/win" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./PKG/win does not exist"
+            exit 1
+          fi
+
+      - name: ./PKG/win/QLArk.exe
+        id: check_pkg_win_qlark
+        run: |
+          if [ -f "./PKG/win/QLArk.exe" ]; then
+            echo "Exists!"
+          else
+            echo "File ./PKG/win/QLArk.exe does not exist"
+            exit 1
+          fi
+
+      - name: ./PKG/linux
+        id: check_pkg_linux
+        run: |
+          if [ -d "./PKG/linux" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./PKG/linux does not exist"
+            exit 1
+          fi
+
+      - name: ./PKG/linux/QLArk
+        id: check_pkg_linux_qlark
+        run: |
+          if [ -f "./PKG/linux/QLArk" ]; then
+            echo "Exists!"
+          else
+            echo "File ./PKG/linux/QLArk does not exist"
+            exit 1
+          fi
+
+      - name: ./PKG/macos
+        id: check_pkg_macos
+        run: |
+          if [ -d "./PKG/macos" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./PKG/macos does not exist"
+            exit 1
+          fi
+
+      - name: ./PKG/macos/QLArk
+        id: check_pkg_macos_qlark
+        run: |
+          if [ -f "./PKG/macos/QLArk" ]; then
+            echo "Exists!"
+          else
+            echo "File ./PKG/macos/QLArk does not exist"
+            exit 1
+          fi
+
+      - name: ./.vitepress
+        id: check_vitepress
+        run: |
+          if [ -d "./.vitepress" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./.vitepress does not exist"
+            exit 1
+          fi
+
+      - name: ./docs
+        id: check_docs
+        run: |
+          if [ -d "./docs" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./docs does not exist"
+            exit 1
+          fi
+
+      - name: ./docs/assets
+        id: check_docs_assets
+        run: |
+          if [ -d "./docs/assets" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./docs/assets does not exist"
+            exit 1
+          fi

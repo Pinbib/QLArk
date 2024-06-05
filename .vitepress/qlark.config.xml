@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QLArk>
+    <namespace>namespace</namespace>
+    <language id="js" />
+    <comment save="true" />
+    <from src="./src" />
+    <to src="./dist" />
+</QLArk>
