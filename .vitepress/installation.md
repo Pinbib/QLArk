@@ -8,11 +8,11 @@ QLArk is available on Windows, Linux, MacOS:
 
 # OS
 
-|   OS    |             FILE              | TESTED |
-|:-------:|:-----------------------------:|:------:|
-| Windows |  [HERE](https://github.com/Pinbib/QLArk/blob/main/pkg/win/QLArk.exe)  |   :white_check_mark:    |
-|  Linux  | [HERE](https://github.com/Pinbib/QLArk/blob/main/pkg/linux/QLArk) |   :x:    |
-|  MacOS  | [HERE](https://github.com/Pinbib/QLArk/blob/main/pkg/wacos/QLArk) |   :x:    |
+|   OS    |             FILE              | TESTED | DOCS |
+|:-------:|:-----------------------------:|:------:|:----:|
+| Windows |  [HERE](https://github.com/Pinbib/QLArk/blob/main/PKG/win/QLArk.exe)  |   :white_check_mark:    |   [DOCS](#window) |
+|  Linux  | [HERE](https://github.com/Pinbib/QLArk/blob/main/PKG/linux/QLArk) |   :x:    |   [DOCS](#linux) |
+|  MacOS  | [HERE](https://github.com/Pinbib/QLArk/blob/main/PKG/wacos/QLArk) |   :x:    |   [DOCS](#macos) |
 
 ## Window
 
