@@ -16,12 +16,12 @@ QLArk is available on Windows, Linux, MacOS:
 
 ## Window
 
-To work with QLArk, download this [file](https://github.com/Pinbib/QLArk/blob/main/pkg/win/QLArk.exe) to your device and move this file to the `C:/Windows/System32/` folder.
+To work with QLArk, download this [file](https://github.com/Pinbib/QLArk/blob/main/PKG/win/QLArk.exe) to your device and move this file to the `C:/Windows/System32/` folder.
 Then follow the steps [here](#after).
 
 ## Linux
 
-To work with QLArk, download this [file](https://github.com/Pinbib/QLArk/blob/main/pkg/linux/QLArk) to your device. Then, for this, you need to transfer this file to the `/usr/bin/` folder to do this, open a terminal and run:
+To work with QLArk, download this [file](https://github.com/Pinbib/QLArk/blob/main/PKG/linux/QLArk) to your device. Then, for this, you need to transfer this file to the `/usr/bin/` folder to do this, open a terminal and run:
 
 ```bash
 sudo cp QLArk /usr/bin/
@@ -35,7 +35,7 @@ Then follow the steps [here](#after).
 
 ## MacOS
 
-To work with QLArk, download this [file](https://github.com/Pinbib/QLArk/blob/main/pkg/macos/QLArk) to your device. Then, for this, you need to transfer this file to the `/usr/bin/` folder to do this, open a terminal and run:
+To work with QLArk, download this [file](https://github.com/Pinbib/QLArk/blob/main/PKG/macos/QLArk) to your device. Then, for this, you need to transfer this file to the `/usr/bin/` folder to do this, open a terminal and run:
 
 ```bash
 sudo cp QLArk /usr/bin/
