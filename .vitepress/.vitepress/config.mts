@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "QLArk",
   description: "QLArk - it's a simple API generator from QLore code.",
+  // !!!!!!!!!!!!!!!!
+  base: "https://pinbib.github.io/QLArk/",
+  // !!!!!!!!!!!!!!!!
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
