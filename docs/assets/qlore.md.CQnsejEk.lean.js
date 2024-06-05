@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a1 as t}from"./chunks/framework.w1pOSvpK.js";const g=JSON.parse('{"title":"QLore","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"qlore.md","filePath":"qlore.md"}'),e={name:"qlore.md"},n=t("",26),l=[n];function p(h,k,d,o,r,c){return a(),i("div",null,l)}const u=s(e,[["render",p]]);export{g as __pageData,u as default};

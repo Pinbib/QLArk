@@ -4,7 +4,7 @@ export default defineConfig({
   title: "QLArk",
   description: "QLArk - it's a simple API generator from QLore code.",
   // !!!!!!!!!!!!!!!!
-  base: "https://pinbib.github.io/QLArk/",
+  base: "/QLArk/",
   // !!!!!!!!!!!!!!!!
   themeConfig: {
     nav: [
