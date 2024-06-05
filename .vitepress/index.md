@@ -1,15 +1,10 @@
 ---
 layout: home
 
-head:
-  - - meta
-    - property: "og:image"
-      content: ./QLArk.svg
-
 hero:
   name: "QLArk"
   text: "From QLore to API"
-  image: ./QLArk.svg
+  image: ./QLArk.png
   actions:
     - theme: brand
       text: Installation

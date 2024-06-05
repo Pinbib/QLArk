@@ -6,6 +6,9 @@ export default defineConfig({
   // !!!!!!!!!!!!!!!!
   base: "/QLArk/",
   // !!!!!!!!!!!!!!!!
+  head: [
+    ["link", { rel: "icon", href: "./QLArk.ico" }]
+  ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
