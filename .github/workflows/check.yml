@@ -26,6 +26,28 @@ jobs:
             exit 1
           fi
 
+
+      - name: ./src/js
+        id: check_src_js
+        run: |
+          if [ -d "./src/js" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./src/js does not exist"
+            exit 1
+          fi
+
+
+      - name: ./src/cjs
+        id: check_src_cjs
+        run: |
+          if [ -d "./src/cjs" ]; then
+            echo "Exists!"
+          else
+            echo "Directory ./src/cjs does not exist"
+            exit 1
+          fi
+
       - name: ./PKG
         id: check_pkg
         run: |

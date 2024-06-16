@@ -43,7 +43,12 @@ function build() {
 
 		files.forEach(file => moduleList = {...moduleList, ...file.moduleList});
 
-		moduleList = [new Import("http", "node:http"), new Import("https", "node:https"), ...Object.keys(moduleList).map(name => new Import(name, moduleList[name]))];
+		fs.writeFileSync(path.join(config.to, "./package.json"), JSON.stringify({
+			name: config.name,
+			dependencies: {axios: "^1.7.2"}
+		}, null, 4));
+
+		moduleList = [new Import("axios", "axios"), ...Object.keys(moduleList).map(name => new Import(name, moduleList[name]))];
 
 		let namespace = new Namespace(config.name, function () {
 			return files.map(file => {
