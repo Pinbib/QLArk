@@ -150,6 +150,11 @@ cat.add("run", () => {
 	}
 });
 
+cat.add("inspect", () => {
+	// TODO: make this
+	console.log(qp.yb("This feature is still under development."));
+});
+
 cat.add("version", () => {
 	console.log(qp.gb("QLArk: ") + qp.yi("v" + process.env.VERSION));
 });

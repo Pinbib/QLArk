@@ -1,3 +1,4 @@
 const js = require("./js");
+const cjs = require("./cjs");
 
-module.exports = {js};
+module.exports = {js, cjs};
