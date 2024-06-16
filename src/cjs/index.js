@@ -43,6 +43,7 @@ function build() {
 
 		files.forEach(file => moduleList = {...moduleList, ...file.moduleList});
 
+		fs.mkdirSync(config.to, {recursive: true});
 		fs.writeFileSync(path.join(config.to, "./package.json"), JSON.stringify({
 			name: config.name,
 			dependencies: {axios: "^1.7.2"}

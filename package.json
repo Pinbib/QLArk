@@ -1,23 +1,23 @@
 {
   "name": "qlark",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "src/QLArk.js",
   "scripts": {
-    "pkg": "node build.js"
+	"pkg": "node build.js"
   },
   "keywords": [],
   "author": "PinBib",
   "license": "ISC",
   "dependencies": {
-    "dev-null": "^0.1.1",
-    "pkg": "^5.8.1",
-    "prompts": "^2.4.2",
-    "qp-color": "^0.0.1",
-    "vcate": "^0.1.1",
-    "xml-js": "^1.6.11"
+	"dev-null": "^0.1.1",
+	"pkg": "^5.8.1",
+	"prompts": "^2.4.2",
+	"qp-color": "^0.0.1",
+	"vcate": "^0.1.1",
+	"xml-js": "^1.6.11"
   },
   "devDependencies": {
-    "vitepress": "^1.2.2"
+	"vitepress": "^1.2.2"
   }
 }
