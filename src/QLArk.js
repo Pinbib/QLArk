@@ -179,6 +179,8 @@ cat.add("inspect", (args, flags, opts) => {
 	}
 });
 
+cat.alias("inspect", "--i");
+
 cat.add("version", () => {
 	console.log(qp.gb("QLArk: ") + qp.yi("v" + process.env.VERSION));
 });
