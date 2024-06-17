@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const Console = require("./src/Console.js");
 
-const VERSION = "0.0.1";
+const VERSION = "0.0.3";
 
 const platforms = ["linux", "macos", "win"];
 
