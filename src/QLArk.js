@@ -150,9 +150,33 @@ cat.add("run", () => {
 	}
 });
 
-cat.add("inspect", () => {
-	// TODO: make this
-	console.log(qp.yb("This feature is still under development."));
+cat.add("inspect", (args, flags, opts) => {
+	if (opts.src) {
+		if (fs.existsSync(opts.src)) {
+			if (path.extname(opts.src) === ".ql") {
+				try {
+					require("./reader.js")(opts.src);
+					console.log(qp.gb("All is well! No errors were found."));
+				} catch (err) {
+					if (err) {
+						console.log(qp.rb("An error was detected: ") + qp.ri(err.message));
+					}
+				}
+			} else {
+				console.log(qp.rb("The file has an unsupported extension."));
+			}
+		} else {
+			console.log(qp.rb(`The path ${qp.ri(opts)} does not exist`));
+		}
+	} else {
+		console.log(qp.ri("No path was specified."));
+	}
+}, {
+	src: (args) => {
+		if (args[0]) {
+			return path.resolve(args.join(" "));
+		}
+	}
 });
 
 cat.add("version", () => {
