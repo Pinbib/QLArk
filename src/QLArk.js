@@ -183,12 +183,6 @@ cat.add("version", () => {
 	console.log(qp.gb("QLArk: ") + qp.yi("v" + process.env.VERSION));
 });
 
-cat.add("--v", () => {
-	console.log(qp.gb("QLArk: ") + qp.yi("v" + process.env.VERSION));
-});
-
-cat.add("v", () => {
-	console.log(qp.gb("QLArk: ") + qp.yi("v" + process.env.VERSION));
-});
+cat.alias("version", "v", "--v");
 
 cat.listen();
