@@ -1,4 +1,4 @@
-process.env.VERSION = "0.0.3";
+process.env.VERSION = "0.0.4";
 
 global.QLArk = "\n" + "`░██████╗░██╗░░░░░░█████╗░██████╗░██╗░░██╗\n" + "██╔═══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝\n" + "██║██╗██║██║░░░░░███████║██████╔╝█████═╝░\n" + "╚██████╔╝██║░░░░░██╔══██║██╔══██╗██╔═██╗░\n" + "░╚═██╔═╝░███████╗██║░░██║██║░░██║██║░╚██╗\n" + "░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝`\n\n";
 
@@ -44,7 +44,7 @@ cat.add("init", async function () {
 			choices: [
 				{title: "Browser JavaScript", value: "js", disabled: false},
 				{title: "NodeJS CommonJS", value: "cjs", disabled: false},
-				{title: "NodeJS ESM", value: "mjs", disabled: true},
+				{title: "NodeJS ESM", value: "mjs", disabled: false},
 				{title: "Python", value: "py", disabled: true},
 				{title: "TypeScript", value: "ts", disabled: true},
 				{title: "CSharp", value: "cs", disabled: true}
