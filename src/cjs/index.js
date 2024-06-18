@@ -114,7 +114,7 @@ function build() {
 			}).join("\n");
 		});
 
-		resolve(moduleList.join("") + namespace);
+		resolve(`\`${QLArk}\`` + moduleList.join("") + namespace);
 	});
 }
 

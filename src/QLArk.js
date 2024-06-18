@@ -1,6 +1,6 @@
-process.env.VERSION = "0.0.4";
+process.env.VERSION = "0.0.6";
 
-global.QLArk = "\n" + "`░██████╗░██╗░░░░░░█████╗░██████╗░██╗░░██╗\n" + "██╔═══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝\n" + "██║██╗██║██║░░░░░███████║██████╔╝█████═╝░\n" + "╚██████╔╝██║░░░░░██╔══██║██╔══██╗██╔═██╗░\n" + "░╚═██╔═╝░███████╗██║░░██║██║░░██║██║░╚██╗\n" + "░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝`\n\n";
+global.QLArk = "\n" + "░██████╗░██╗░░░░░░█████╗░██████╗░██╗░░██╗\n" + "██╔═══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝\n" + "██║██╗██║██║░░░░░███████║██████╔╝█████═╝░\n" + "╚██████╔╝██║░░░░░██╔══██║██╔══██╗██╔═██╗░\n" + "░╚═██╔═╝░███████╗██║░░██║██║░░██║██║░╚██╗\n" + "░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝\n\n";
 
 const fs = require("fs");
 const path = require("path");
@@ -133,7 +133,7 @@ cat.add("run", () => {
 	if (builders[config.lang.toLowerCase()]) {
 		builders[config.lang.toLowerCase()]().then((value) => {
 			fs.mkdirSync(config.to, {recursive: true});
-			fs.writeFile(path.join(config.to, config.name + "." + config.lang), QLArk + value.toString(), {encoding: "utf-8"}, (err) => {
+			fs.writeFile(path.join(config.to, config.name + "." + config.lang), value.toString(), {encoding: "utf-8"}, (err) => {
 				if (!err) {
 					console.log(qp.gb("The project has been successfully built!"));
 				} else {
