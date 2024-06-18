@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Languages
 
 QLArk supports or will support the following languages:
@@ -64,7 +68,7 @@ id: My message.
 [[object Object], [object Object]]
 ```
 
-# cjs
+## CJS
 
 Each method returns a promise through which all requests are processed. And
 the [`axios`]( https://www.npmjs.com/package/axios ) npm package is used to send requests.
@@ -120,7 +124,7 @@ id: My message.
 
 And you should have a `package.json` file created with the `axios` dependency.
 
-# mjs
+## MJS
 
 Each method returns a promise through which all requests are processed. And
 the [`axios`]( https://www.npmjs.com/package/axios ) npm package is used to send requests.
