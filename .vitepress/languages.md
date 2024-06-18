@@ -6,7 +6,7 @@ QLArk supports or will support the following languages:
 |:------------------:|:-----:|:------------------:|:-----------:|
 | Browser JavaScript | `js`  | :white_check_mark: |  [JS](#js)  |
 |  NodeJS CommonJS   | `cjs` | :white_check_mark: | [CJS](#cjs) |
-|     NodeJS ESM     | `mjs` |        :x:         | [MJS](#mjs) |
+|     NodeJS ESM     | `mjs` | :white_check_mark: | [MJS](#mjs) |
 |       Python       | `py`  |        :x:         |  [PY](#py)  |
 |     TypeScript     | `ts`  |        :x:         |  [TS](#ts)  |
 |       CSharp       | `cs`  |        :x:         |  [CS](#cs)  |
