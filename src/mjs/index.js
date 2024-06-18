@@ -31,13 +31,20 @@ function genUrl(url, data = {}) {
 function build() {
 	return new Promise((resolve, reject) => {
 		let files = fs.readdirSync(config.from).filter(val => fs.statSync(path.join(config.from, val)).isFile() && path.extname(path.join(config.from, val)) === ".ql").map(val => path.join(config.from, val));
-		files = files.map((src) => (
-			{
-				name: path.basename(src, path.extname(src)),
-				src: src,
-				...reader(src)
+		try {
+			files = files.map((src) => (
+				{
+					name: path.basename(src, path.extname(src)),
+					src: src,
+					...reader(src)
+				}
+			));
+		} catch (err) {
+			if (err) {
+				reject(err);
+				return;
 			}
-		));
+		}
 
 		let moduleList = {};
 

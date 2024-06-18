@@ -41,8 +41,7 @@ function build() {
 			));
 		} catch (err) {
 			if (err) {
-				console.log(qp.rb("An error occurred while reading files."));
-				console.log(err.message);
+				reject(err);
 				return;
 			}
 		}
