@@ -73,7 +73,7 @@ function reader(src) {
 							stop();
 						}
 					} else {
-						varList[line[1]] = undefined;
+						varList[line[1].toLowerCase()] = undefined;
 					}
 				} else {
 					throw new Error(Console.error("No variable name was specified."));

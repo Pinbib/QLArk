@@ -6,7 +6,12 @@
 
 class Field extends String {
 	constructor(name, args, value) {
-		super(`\texport function ${name}(${args.join(": string, ")}): Promise<string[]>{\n${value()}\n\t}`);
+		let args_ = "";
+		args.forEach((arg, i) => {
+			args_ += arg + ": string" + (args.length === (i + 1) ? "" : ", ");
+		});
+		
+		super(`\texport function ${name}(${args_}): Promise<string[]>{\n${value()}\n\t}`);
 	}
 }
 
