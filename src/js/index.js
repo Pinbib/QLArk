@@ -144,7 +144,7 @@ function build() {
 			}).join("\n");
 		});
 
-		resolve(`\`${QLArk}\`` + moduleList.join("") + namespace);
+		resolve(`\`${QLArk}\`\n` + moduleList.join("") + namespace);
 	});
 }
 
