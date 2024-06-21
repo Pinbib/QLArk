@@ -26,6 +26,15 @@ export default defineConfig({
         ]
       },
       {
+        text: "CLI", link: "/cli",
+        items: [
+          { text: "init", link: "/cli#init" },
+          { text: "run", link: "/cli#run" },
+          { text: "inspect", link: "/cli#inspect" },
+          { text: "version", link: "/cli#version" },
+        ]
+      },
+      {
         text: 'Configuration', link: "/configuration",
         items: [
           { text: "Init", link: "/configuration#init" },
