@@ -50,12 +50,6 @@ function build() {
 
 		files.forEach(file => moduleList = {...moduleList, ...file.moduleList});
 
-		fs.mkdirSync(config.to, {recursive: true});
-		fs.writeFileSync(path.join(config.to, "./package.json"), JSON.stringify({
-			name: config.name,
-			dependencies: {axios: "^1.7.2"}
-		}, null, 4));
-
 		moduleList = [new Import("request", "requests"), ...Object.keys(moduleList).map(name => new Import(name, moduleList[name]))];
 
 		let namespace = new Namespace(config.name, function () {

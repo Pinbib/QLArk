@@ -53,6 +53,7 @@ function build() {
 		fs.mkdirSync(config.to, {recursive: true});
 		fs.writeFileSync(path.join(config.to, "./package.json"), JSON.stringify({
 			name: config.name,
+			type: "commonjs",
 			dependencies: {axios: "^1.7.2"}
 		}, null, 4));
 

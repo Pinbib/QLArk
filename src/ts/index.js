@@ -59,7 +59,22 @@ function build() {
 		fs.mkdirSync(config.to, {recursive: true});
 		fs.writeFileSync(path.join(config.to, "./package.json"), JSON.stringify({
 			name: config.name,
-			dependencies: {axios: "^1.7.2"}
+			type: "module",
+			dependencies: {axios: "^1.7.2", typescript: "^5.5.2"}
+		}, null, 4));
+
+		fs.writeFileSync(path.join(config.to, "./tsconfig.json"), JSON.stringify({
+			compilerOptions: {
+				target: "ESNext",
+				module: "ESNext",
+				rootDir: config.to,
+				outDir: path.join(config.to, path.basename(config.to)),
+				esModuleInterop: true,
+				forceConsistentCasingInFileNames: true,
+				strict: true,
+				skipLibCheck: true,
+				declaration: true
+			}
 		}, null, 4));
 
 		moduleList = [new Import("axios", "axios"), ...Object.keys(moduleList).map(name => new Import(name, moduleList[name]))];

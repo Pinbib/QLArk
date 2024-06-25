@@ -2,6 +2,7 @@
   "name": "qlark",
   "version": "0.0.8",
   "description": "",
+  "type": "commonjs",
   "main": "src/QLArk.js",
   "scripts": {
 	"pkg": "node build.js"
