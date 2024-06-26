@@ -47,7 +47,7 @@ cat.add("init", async function () {
 				{title: "NodeJS ESM", value: "mjs", disabled: false},
 				{title: "Python", value: "py", disabled: false},
 				{title: "TypeScript", value: "ts", disabled: false},
-				{title: "CSharp", value: "cs", disabled: false}
+				{title: "CSharp", value: "cs", disabled: true}
 			]
 		});
 
